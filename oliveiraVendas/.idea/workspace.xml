@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="" />
+    <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DAO/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/class/Banco.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/class/Banco.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/config.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1VopE3mrpBAHwk0xPaoQ9fHDqlM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -62,11 +68,24 @@
       <workItem from="1579440274982" duration="4967000" />
       <workItem from="1579914807706" duration="2010000" />
       <workItem from="1579992726675" duration="23708000" />
+      <workItem from="1580176393245" duration="2496000" />
     </task>
+    <task id="LOCAL-00001" summary="Arquivo de conexão">
+      <created>1580176507422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580176507422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Arquivo de conexão" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arquivo de conexão" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="79" width="642" height="637" key="#atributo_metodo.php" timestamp="1578255331064">
@@ -81,14 +100,18 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="467" y="268" width="488" height="258" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1299.741@67.27.1299.741" timestamp="1577930941251" />
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1580176506950">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1580176506950" />
     <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog" timestamp="1580071072175">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1580071072175" />
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1580074414695">
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1580177834759">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1580074414695" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1580177834759" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1578192450569">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
