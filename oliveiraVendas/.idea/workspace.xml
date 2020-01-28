@@ -12,6 +12,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1VopE3mrpBAHwk0xPaoQ9fHDqlM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +28,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DAO" />
       <recent name="$PROJECT_DIR$/DAO/class" />
       <recent name="$PROJECT_DIR$/NameSpace/class" />
       <recent name="$PROJECT_DIR$/NameSpace" />
@@ -57,7 +61,7 @@
       <workItem from="1579141803708" duration="2199000" />
       <workItem from="1579440274982" duration="4967000" />
       <workItem from="1579914807706" duration="2010000" />
-      <workItem from="1579992726675" duration="20640000" />
+      <workItem from="1579992726675" duration="23708000" />
     </task>
     <servers />
   </component>
@@ -77,22 +81,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="467" y="268" width="488" height="258" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1299.741@67.27.1299.741" timestamp="1577930941251" />
-    <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog" timestamp="1578827896667">
+    <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog" timestamp="1580071072175">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1578827896667" />
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1580007234662">
+    <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1580071072175" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1580074414695">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1580007234662" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1580074414695" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1578192450569">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/67.27.1299.741@67.27.1299.741" timestamp="1578192450569" />
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1579992894904">
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1580176396468">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1579992894904" />
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1580176396468" />
     <state x="370" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579052021647">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
