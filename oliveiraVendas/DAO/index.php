@@ -2,8 +2,8 @@
 
 require_once ("config.php");
 
-$sql =new Banco();
+$consulta = new Usuario();
 
-$result = $sql->select("SELECT * FROM tab_usuario");
+$consulta->loadById(5);
 
-echo json_encode($result);
+echo $consulta;

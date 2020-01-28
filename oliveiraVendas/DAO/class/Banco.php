@@ -30,6 +30,7 @@ class Banco extends PDO{
     public function query($rawQuery, $params = array()){
 
         $stm = $this->conn->prepare($rawQuery);
+
         $this->setParams($stm, $params);
 
         $stm->execute();
@@ -37,7 +38,7 @@ class Banco extends PDO{
         return $stm;
     }
 
-    public function select($rawQuery, $params = array()): array {
+    public function select($rawQuery, $params = array()) {
 
         $stm = $this->query($rawQuery, $params);
 
