@@ -4,8 +4,6 @@
     <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="Arquivo de conexão">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/class/Banco.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/class/Banco.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/class/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/class/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <workItem from="1579440274982" duration="4967000" />
       <workItem from="1579914807706" duration="2010000" />
       <workItem from="1579992726675" duration="23708000" />
-      <workItem from="1580176393245" duration="7166000" />
+      <workItem from="1580176393245" duration="7943000" />
     </task>
     <task id="LOCAL-00001" summary="Arquivo de conexão">
       <created>1580176507422</created>
