@@ -39,6 +39,13 @@ class Usuario{
         return $this->datCadastro;
     }
 
+    public function __construct($desLogin="", $desNome="", $desPass=""){
+        $this->setDesLogin($desLogin);
+        $this->setDesNome($desNome);
+        $this->setDesPass($desPass);
+
+    }
+
     public function setData($data){
         $this->setIdUsuario($data['idUsuario']);
         $this->setDesLogin($data['desLogin']);
@@ -47,31 +54,13 @@ class Usuario{
         $this->setDatCadastro(new DateTime($data['datCadastro']));
 
     }
-
-    public function loadById($id){
-        $sql = new Banco();
-        $result = $sql->select("SELECT * FROM tab_usuario WHERE idUsuario = :ID", array(":ID"=>$id));
-
-        if (count($result) > 0){
-            $this->setData($result[0]);
-
-        } else{
-            echo "Nennhum resultado encontrado para a consulta.";
-
-        }
-    }
-
-    static function getList(){
-        $sql = new Banco();
-
-        return $sql->select("SELECT * FROM tab_usuario ORDER BY desLogin;");
-    }
-
-    static function geSearch($desLogin){
-        $sql = new Banco();
-
-        return $sql->select("SELECT * FROM tab_usuario WHERE desLogin LIKE :SEARCH ORDER BY desLogin", array(
-            ":SEARCH"=>"%". $desLogin . "%"
+    public function __toString(){
+        return json_encode(array(
+            "idUsuario" => $this->getIdUsuario(),
+            "desLogin" => $this->getDesLogin(),
+            "desNome" => $this->getDesNome(),
+            "desPass" => $this->getDesPass(),
+            "datCadastro" => $this->getDatCadastro()->format("d/m/Y H:i:s")
         ));
     }
 
@@ -90,6 +79,34 @@ class Usuario{
 
         }
     }
+
+    public function loadById($id){
+        $sql = new Banco();
+        $result = $sql->select("SELECT * FROM tab_usuario WHERE idUsuario = :ID", array(":ID"=>$id));
+
+        if (count($result) > 0){
+            $this->setData($result[0]);
+
+        } else{
+            var_dump("Nennhum resultado encontrado para a consulta.");
+
+        }
+    }
+
+    static function getList(){
+        $sql = new Banco();
+
+        return $sql->select("SELECT * FROM tab_usuario ORDER BY desLogin;");
+    }
+
+    static function geSearch($desLogin){
+        $sql = new Banco();
+
+        return $sql->select("SELECT * FROM tab_usuario WHERE desLogin LIKE :SEARCH ORDER BY desLogin", array(
+            ":SEARCH"=>"%". $desLogin . "%"
+        ));
+    }
+
     public function insertUser(){
         $sql = new Banco();
         $result = $sql->select("CALL sp_add_usuario(:desLogin, :desNome, :desPass)", array(
@@ -101,12 +118,6 @@ class Usuario{
         if (count($result) > 0){
             $this->setData($result[0]);
         }
-
-    }
-    public function __construct($desLogin="", $desNome="", $desPass=""){
-        $this->setDesLogin($desLogin);
-        $this->setDesNome($desNome);
-        $this->setDesPass($desPass);
 
     }
 
@@ -122,16 +133,19 @@ class Usuario{
             ':desPass'=>$this->getDesPass(),
             ':idUsuario'=>$this->getIdUsuario()
         ));
-
     }
 
-    public function __toString(){
-        return json_encode(array(
-            "idUsuario" => $this->getIdUsuario(),
-            "desLogin" => $this->getDesLogin(),
-            "desNome" => $this->getDesNome(),
-            "desPass" => $this->getDesPass(),
-            "datCadastro" => $this->getDatCadastro()->format("d/m/Y H:i:s")
+    public function deletUser(){
+        $sql = new Banco();
+        $sql->query("DELETE FROM tab_usuario WHERE idUsuario = :idUsuario", array(
+            ':idUsuario'=>$this->getIdUsuario()
         ));
+
+        $this->setIdUsuario(0);
+        $this->setDesLogin("");
+        $this->setDesNome("");
+        $this->setDesPass("");
+        $this->setDatCadastro(new DateTime());
+
     }
 }

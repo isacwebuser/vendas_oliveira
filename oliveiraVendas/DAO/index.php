@@ -8,8 +8,8 @@ require_once ("config.php");
 //echo $consulta;
 
 //Consulta de lista
-$lista = Usuario::getList();
-echo json_encode($lista);
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
 //Pesquisa de usuario
 //$search = Usuario::geSearch("usuario");
@@ -25,7 +25,13 @@ echo json_encode($lista);
 //$cliente->insertUser();
 //echo $cliente;
 
+//Alterar dados do usuario
 //$usurio = new Usuario();
 //$usurio->loadById(1);
 //$usurio->updateUser("adm_master", "adm_master555",  "21321321");
 //echo $usurio;
+
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->deletUser();
+echo $usuario;
