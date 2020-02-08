@@ -31,7 +31,8 @@ require_once ("config.php");
 //$usurio->updateUser("adm_master", "adm_master555",  "21321321");
 //echo $usurio;
 
-$usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->deletUser();
-echo $usuario;
+//Deletando usuario
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->deletUser();
+//echo $usuario;

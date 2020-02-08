@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="Arquivo de conexão">
+      <change afterPath="$PROJECT_DIR$/Arquivos/man_arquivo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/class/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/class/Usuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <workItem from="1580176393245" duration="11162000" />
       <workItem from="1580350553886" duration="4231000" />
       <workItem from="1580605820720" duration="1607000" />
-      <workItem from="1580861650426" duration="3863000" />
+      <workItem from="1580861650426" duration="17403000" />
     </task>
     <task id="LOCAL-00001" summary="Arquivo de conexão">
       <created>1580176507422</created>
@@ -117,10 +117,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1580071072175" />
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1580177834759">
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1581179942658">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1580177834759" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1581179942658" />
     <state x="527" y="109" width="368" height="574" key="RollbackChangesDialog" timestamp="1580183379987">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -145,10 +145,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="600" height="424" key="javadoc.popup/67.27.1299.741@67.27.1299.741" timestamp="1579052196168" />
-    <state x="380" y="175" key="run.anything.popup" timestamp="1579996260471">
+    <state x="380" y="175" key="run.anything.popup" timestamp="1581180912370">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1579996260471" />
+    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1581180912370" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1580864945600">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
