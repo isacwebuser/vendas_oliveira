@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="Arquivo de conexão">
-      <change afterPath="$PROJECT_DIR$/DAO/ManArquivo2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../info.php" beforeDir="false" afterPath="$PROJECT_DIR$/../info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arquivos/man_arquivo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos/man_arquivo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arquivos/man_arquivo2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/ManArquivo2.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/ManArquivo2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <workItem from="1580605820720" duration="1607000" />
       <workItem from="1580861650426" duration="19896000" />
       <workItem from="1581380306742" duration="3365000" />
-      <workItem from="1581384929117" duration="3996000" />
+      <workItem from="1581384929117" duration="4912000" />
     </task>
     <task id="LOCAL-00001" summary="Arquivo de conexão">
       <created>1580176507422</created>

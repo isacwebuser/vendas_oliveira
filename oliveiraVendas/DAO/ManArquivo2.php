@@ -17,7 +17,7 @@ fwrite($file, implode(",", $headers) . "\r\n");
 foreach ($users as $rows) {
     $data = array();
     //Foreach de coluna
-    foreach ($rows as $key => $value) {
+    foreach ($rows as $columns => $value) {
         array_push($data, $value);
     }
     fwrite($file, implode(",", $data) . "\r\n");
