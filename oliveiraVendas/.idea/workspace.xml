@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91eecd21-4aa5-457a-93e6-f72dc5d7e91c" name="Default Changelist" comment="Arquivo de conexão">
-      <change afterPath="$PROJECT_DIR$/Arquivos/man_arquivo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAO/ManArquivo2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../info.php" beforeDir="false" afterPath="$PROJECT_DIR$/../info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos/man_arquivo.php" beforeDir="false" afterPath="$PROJECT_DIR$/Arquivos/man_arquivo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arquivos/man_arquivo2.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +37,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/DAO" />
+      <recent name="$PROJECT_DIR$/Arquivos" />
       <recent name="$PROJECT_DIR$/DAO/class" />
       <recent name="$PROJECT_DIR$/NameSpace/class" />
       <recent name="$PROJECT_DIR$/NameSpace" />
@@ -70,7 +74,9 @@
       <workItem from="1580176393245" duration="11162000" />
       <workItem from="1580350553886" duration="4231000" />
       <workItem from="1580605820720" duration="1607000" />
-      <workItem from="1580861650426" duration="17403000" />
+      <workItem from="1580861650426" duration="19896000" />
+      <workItem from="1581380306742" duration="3365000" />
+      <workItem from="1581384929117" duration="3996000" />
     </task>
     <task id="LOCAL-00001" summary="Arquivo de conexão">
       <created>1580176507422</created>
@@ -105,6 +111,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="425" y="202" width="572" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1577930008115" />
+    <state x="399" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581384901386">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="399" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/67.27.1299.741@67.27.1299.741" timestamp="1581384901386" />
     <state x="467" y="268" width="488" height="258" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577930941251">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -117,10 +127,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="443" y="211" width="537" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1580071072175" />
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1581179942658">
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog" timestamp="1581385852430">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1581179942658" />
+    <state x="512" y="323" width="399" height="149" key="NewPhpFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1581385852430" />
     <state x="527" y="109" width="368" height="574" key="RollbackChangesDialog" timestamp="1580183379987">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -129,10 +139,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/67.27.1299.741@67.27.1299.741" timestamp="1578192450569" />
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1580861652547">
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1581384928702">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1580861652547" />
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1581384928702" />
     <state x="370" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579052021647">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

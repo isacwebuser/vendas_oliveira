@@ -2,8 +2,15 @@
 
 class Arquivos{
 
-    private $dirName = "Teste";
+    private $dirName;
+    private $file;
 
+    public function getFile(){
+        return $this->file;
+    }
+    public function setFile($file){
+        $this->file = $file;
+    }
     public function getDirName(){
         return $this->dirName;
     }
@@ -11,8 +18,9 @@ class Arquivos{
         $this->dirName = $dirName;
     }
 
-    public function validarDir($dirName){
-        if(!is_dir($this->dirName)){
+    public function validarDir(){
+        $this->dirName = "Teste3";
+        if(!file_exists($this->dirName)){
             mkdir($this->dirName);
             echo "Diretório $this->dirName criado com sucesso.";
         } else{
@@ -22,6 +30,7 @@ class Arquivos{
 
     public function infoArquivos(){
 
+        $this->dirName = "Teste";
         $larquivos = scandir($this->dirName);
         $data = array();
 
@@ -40,7 +49,24 @@ class Arquivos{
         }
         echo json_encode($data);
     }
+    public function gerarArquivoLog(){
+
+        $this->file = "log.txt";
+
+        if(!file_exists($this->file)){
+
+            $this->file = fopen("log.txt", "w+");
+            fwrite($this->file, date("d/m/Y H:i:s"). " Inicio de Log. \r\n");
+            fclose($this->file);
+            echo "Arquivo de Log Criado";
+        } else{
+            $this->file = fopen("log.txt", "a+");
+            fwrite($this->file, date("d/m/Y H:i:s") . " Adicionando...\r\n");
+            fclose($this->file);
+            echo "Adicionando trecho de log.";
+        }
+    }
 }
 
 $saida = new Arquivos();
-echo $saida->validarDir("Teste");
+echo $saida->infoArquivos();

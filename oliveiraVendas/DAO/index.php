@@ -32,7 +32,7 @@ require_once ("config.php");
 //echo $usurio;
 
 //Deletando usuario
-//$usuario = new Usuario();
-//$usuario->loadById(8);
-//$usuario->deletUser();
-//echo $usuario;
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->deletUser();
+echo $usuario;
