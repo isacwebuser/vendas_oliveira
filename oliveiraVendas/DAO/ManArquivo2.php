@@ -22,10 +22,10 @@ private $headers = array();
         if(count($saida) > 0){
 
         foreach ($saida[0] as $key => $value) {
-            array_push($headers, ucfirst($key));
+            array_push($this->headers, ucfirst($key));
         }
         $file = fopen("usuarios.csv", "w+");
-        fwrite($file, implode(",", $headers) . "\r\n");
+        fwrite($file, implode(",", $this->headers). "\r\n");
 //Foreach de linha
         foreach ($saida as $rows) {
             $data = array();
@@ -33,12 +33,15 @@ private $headers = array();
             foreach ($rows as $columns => $value) {
                 array_push($data, $value);
             }
-            fwrite($file, implode(",", $data) . "\r\n");
+            fwrite($file, implode(",", $data). "\r\n");
         }
-
         fclose($file);
+        echo "Concluído com sucesso.";
     } else {
             echo "Nenhum registro encontrado.";
         }
     }
 }
+
+$end = new Exportar();
+$result = $end->montarCSV();

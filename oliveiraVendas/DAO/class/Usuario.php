@@ -88,9 +88,10 @@ class Usuario{
             $this->setData($result[0]);
 
         } else{
-            var_dump("Nennhum resultado encontrado para a consulta.");
+            var_dump("Nenhum resultado encontrado para a consulta.");
 
         }
+        return $result;
     }
 
     static function getList(){
