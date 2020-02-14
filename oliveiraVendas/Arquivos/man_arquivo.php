@@ -19,10 +19,10 @@ class Arquivos{
     }
 
     public function validarDir(){
-        $this->dirName = "Teste3";
-        if(!file_exists($this->dirName)){
-            mkdir($this->dirName);
-            echo "Diretório $this->dirName criado com sucesso.";
+        $this->setDirName("Teste3");
+        if(!file_exists($this->getDirName())){
+            mkdir($this->getDirName());
+            echo "Diretório $this->dirName  criado com sucesso.";
         } else{
             echo "Já existe o diretório $this->dirName.";
         }
