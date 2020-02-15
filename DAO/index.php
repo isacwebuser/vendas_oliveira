@@ -1,6 +1,6 @@
 <?php
 
-require_once ("config.php");
+require_once("config.php");
 
 //Consulta unitária
 //$consulta = new Usuario();
@@ -16,9 +16,9 @@ require_once ("config.php");
 //echo json_encode($search);
 
 //Simulando autenticação
-//$autenticacao = new Usuario();
-//$autenticacao->login("adm", "teste123");
-//echo $autenticacao;
+$autenticacao = new Usuario();
+$autenticacao->login("convidado", "convidado");
+echo $autenticacao;
 
 //Insert de novos usuarios
 //$cliente = new Usuario("convidado2", "CONVIDADO DE HONRA2", "convite");
@@ -32,7 +32,7 @@ require_once ("config.php");
 //echo $usurio;
 
 //Deletando usuario
-$usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->deletUser();
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->deletUser();
+//echo $usuario;

@@ -1,13 +1,19 @@
 <?php
 
+define('HOST', 'mysql:localhost;');
+define('DBNAME', 'vendas_oliveira');
+define('USER', 'root');
+define('PASSWORD', 'i1s9a9c1');
+
 class Banco extends PDO{
 
     private $conn;
 
+
     public function __construct(){
 
         try {
-            $this->conn = new PDO("mysql:host=localhost;dbname=vendas_oliveira", "root", "i1s9a9c1");
+            $this->conn = new PDO(HOST.DBNAME, USER, PASSWORD);
         } catch (PDOException $e){
             die("Error: " . $e->getMessage());
         }

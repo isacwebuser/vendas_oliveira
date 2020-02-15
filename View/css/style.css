@@ -1,0 +1,22 @@
+.bloco_login{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin: 10% 0 0 35%;
+    background-color: #6c757d;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.bloco_login label{
+    font-weight: 300;
+    margin-top: 10px;
+}
+.bloco_login .form-control{
+    margin: auto;
+}
+body{
+    background: url("https://wallsheaven.com/photos/A04086290/400/digital-security-hand-print-scan.jpg")no-repeat;
+    webkit-background-size: cover;
+    background-size: cover;
+}

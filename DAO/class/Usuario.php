@@ -66,18 +66,15 @@ class Usuario{
 
     public function login($desLogin, $desPass){
         $sql = new Banco();
-        $result = $sql->select("SELECT * FROM tab_usuario WHERE desLogin = :DESLOGIN AND desPass = :DESPASS", array(
+        $result = $sql->select("SELECT * FROM vendas_oliveira.tab_usuario WHERE desLogin = :DESLOGIN AND desPass = :DESPASS", array(
             ":DESLOGIN"=>$desLogin,
             ":DESPASS"=>$desPass
         ));
 
         if (count($result) > 0){
             $this->setData($result[0]);
-
-        } else{
-            throw new Exception("Login e/ou senha inválidos");
-
         }
+        return $result;
     }
 
     public function loadById($id){
