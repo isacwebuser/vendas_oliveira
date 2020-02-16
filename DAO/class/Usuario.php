@@ -6,6 +6,7 @@ class Usuario{
     private $desLogin;
     private $desNome;
     private $desPass;
+    private $desEmail;
     private $datCadastro;
 
     public function getIdUsuario(){
@@ -32,6 +33,12 @@ class Usuario{
     public function getDesPass(){
         return $this->desPass;
     }
+    public function getDesEmail(){
+        return $this->desEmail;
+    }
+    public function setDesEmail($value){
+        $this->desEmail = $value;
+    }
     public function setDatCadastro($value){
         $this->datCadastro = $value;
     }
@@ -39,11 +46,11 @@ class Usuario{
         return $this->datCadastro;
     }
 
-    public function __construct($desLogin="", $desNome="", $desPass=""){
+    public function __construct($desLogin="", $desNome="", $desPass="", $desEmail=""){
         $this->setDesLogin($desLogin);
         $this->setDesNome($desNome);
         $this->setDesPass($desPass);
-
+        $this->setDesEmail($desEmail);
     }
 
     public function setData($data){
@@ -51,17 +58,21 @@ class Usuario{
         $this->setDesLogin($data['desLogin']);
         $this->setDesNome($data['desNome']);
         $this->setDesPass($data['desPass']);
+        $this->setDesEmail($data['desEmail']);
         $this->setDatCadastro(new DateTime($data['datCadastro']));
+
 
     }
     public function __toString(){
-        return json_encode(array(
+
+        return json_encode([
             "idUsuario" => $this->getIdUsuario(),
             "desLogin" => $this->getDesLogin(),
             "desNome" => $this->getDesNome(),
             "desPass" => $this->getDesPass(),
+            "desEmail" => $this->getDesEmail(),
             "datCadastro" => $this->getDatCadastro()->format("d/m/Y H:i:s")
-        ));
+        ]);
     }
 
     public function login($desLogin, $desPass){
@@ -107,28 +118,29 @@ class Usuario{
 
     public function insertUser(){
         $sql = new Banco();
-        $result = $sql->select("CALL sp_add_usuario(:desLogin, :desNome, :desPass)", array(
+        $result = $sql->select("CALL vendas_oliveira.sp_add_usuario(:desLogin, :desNome, :desPass, :desEmail)", array(
            ":desLogin"=>$this->getDesLogin(),
            ":desNome"=>$this->getDesNome(),
-           ":desPass"=>$this->getDesPass()
+           ":desPass"=>$this->getDesPass(),
+           ":desEmail"=>$this->getDesEmail()
         ));
-
         if (count($result) > 0){
             $this->setData($result[0]);
         }
-
     }
 
-    public function updateUser($desLogin, $desNome, $desPass){
+    public function updateUser($desLogin, $desNome, $desPass,$desEmail){
         $this->setDesLogin($desLogin);
         $this->setDesNome($desNome);
         $this->setDesPass($desPass);
+        $this->setDesEmail($desEmail);
 
         $sql = new Banco();
-        $sql->query("UPDATE tab_usuario SET desLogin = :desLogin, desNome = :desNome, desPass = :desPass WHERE idUsuario = :idUsuario", array(
+        $sql->query("UPDATE tab_usuario SET desLogin = :desLogin, desNome = :desNome, desPass = :desPass, desEmail = :desEmail WHERE idUsuario = :idUsuario", array(
             ':desLogin'=>$this->getDesLogin(),
             ':desNome'=>$this->getDesNome(),
             ':desPass'=>$this->getDesPass(),
+            ':desEmail'=>$this->getDesEmail(),
             ':idUsuario'=>$this->getIdUsuario()
         ));
     }
@@ -143,7 +155,7 @@ class Usuario{
         $this->setDesLogin("");
         $this->setDesNome("");
         $this->setDesPass("");
+        $this->setDesEmail("");
         $this->setDatCadastro(new DateTime());
-
     }
 }

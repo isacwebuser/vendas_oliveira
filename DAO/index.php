@@ -16,12 +16,12 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Simulando autenticação
-$autenticacao = new Usuario();
-$autenticacao->login("convidado", "convidado");
-echo $autenticacao;
+//$autenticacao = new Usuario();
+//$autenticacao->login("convidado", "convidado");
+//echo $autenticacao;
 
 //Insert de novos usuarios
-//$cliente = new Usuario("convidado2", "CONVIDADO DE HONRA2", "convite");
+//$cliente = new Usuario("isac", "Isac de Oliveira Souza", "teste", "isacrgs@gmail.com");
 //$cliente->insertUser();
 //echo $cliente;
 
