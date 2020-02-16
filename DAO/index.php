@@ -17,7 +17,7 @@ require_once("config.php");
 
 //Simulando autenticação
 //$autenticacao = new Usuario();
-//$autenticacao->login("convidado", "convidado");
+//$autenticacao->login("adm", "adm");
 //echo $autenticacao;
 
 //Insert de novos usuarios

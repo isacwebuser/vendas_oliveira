@@ -77,11 +77,10 @@ class Usuario{
 
     public function login($desLogin, $desPass){
         $sql = new Banco();
-        $result = $sql->select("SELECT * FROM vendas_oliveira.tab_usuario WHERE desLogin = :DESLOGIN AND desPass = :DESPASS", array(
+        $result = $sql->select("SELECT * FROM portal_consultas.tab_usuario WHERE desLogin = :DESLOGIN AND desPass = :DESPASS", array(
             ":DESLOGIN"=>$desLogin,
-            ":DESPASS"=>$desPass
+            ":DESPASS"=>md5($desPass)
         ));
-
         if (count($result) > 0){
             $this->setData($result[0]);
         }

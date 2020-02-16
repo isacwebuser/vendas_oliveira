@@ -12,9 +12,7 @@ $consultaLogin = new Usuario();
 $consultaSaida = $consultaLogin->login($request['desLogin'], $request["desPass"]);
 
 if(count($consultaSaida) == 1){
-
     $_SESSION['desLogin'] = $request['desLogin'];
-    var_dump($_SESSION['desLogin']);
     header('Location: ../painel.php');
     exit();
 } else {

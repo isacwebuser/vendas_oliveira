@@ -1,7 +1,7 @@
 <?php
 
 define('HOST', 'mysql:localhost;');
-define('DBNAME', 'vendas_oliveira');
+define('DBNAME', 'portal_consultas');
 define('USER', 'root');
 define('PASSWORD', 'i1s9a9c1');
 
