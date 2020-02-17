@@ -1,6 +1,6 @@
 <form method="POST" enctype="multipart/form-data">
     <input type="file" name="fileUpload">
-    <input type="submit" name="Send">
+    <button type="submit"> Send</button>
 </form>
 <?php
 
