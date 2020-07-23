@@ -21,9 +21,9 @@ require_once("config.php");
 //echo $autenticacao;
 
 //Insert de novos usuarios
-//$cliente = new Usuario("isac", "Isac de Oliveira Souza", "teste", "isacrgs@gmail.com");
-//$cliente->insertUser();
-//echo $cliente;
+$cliente = new Usuario("adm50", "Isac de Oliveira Souza", "teste5", "isacrgs@gmail.com");
+$cliente->insertUser();
+echo $cliente;
 
 //Alterar dados do usuario
 //$usurio = new Usuario();

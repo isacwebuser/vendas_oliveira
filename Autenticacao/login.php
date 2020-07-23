@@ -1,6 +1,8 @@
 <?php
 session_start();
-include ("/var/www/html/DAO/config.php");
+
+define("URL", "/var/www/html");
+include (URL . DIRECTORY_SEPARATOR . "DAO/config.php");
 
 if(empty($_POST['desLogin']) || empty($_POST['desPass'])){
     header('Location: ../index.php');
@@ -9,6 +11,7 @@ if(empty($_POST['desLogin']) || empty($_POST['desPass'])){
 
 $request = $_POST;
 $consultaLogin = new Usuario();
+
 $consultaSaida = $consultaLogin->login($request['desLogin'], $request["desPass"]);
 
 if(count($consultaSaida) == 1){
