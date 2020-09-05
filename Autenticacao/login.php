@@ -14,13 +14,18 @@ $consultaLogin = new Usuario();
 
 $consultaSaida = $consultaLogin->login($request['desLogin'], $request["desPass"]);
 
-if(count($consultaSaida) == 1){
-    $_SESSION['desLogin'] = $request['desLogin'];
-    header('Location: ../painel.php');
-    exit();
-} else {
-    $_SESSION['nao_autenticado'] = true;
-    header("Location: ../index.php");
-    exit();
+try {
+    if(count($consultaSaida) == 1){
+        $_SESSION['desLogin'] = $request['desLogin'];
+        header('Location: ../painel.php');
+        exit();
+    } else {
+        $_SESSION['nao_autenticado'] = true;
+        header("Location: ../index.php");
+        exit();
+    }
+} catch (Exception $e){
+    die($e->getMessage());
 }
+
 

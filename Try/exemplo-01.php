@@ -4,6 +4,6 @@ try {
 
     throw new Exception("Error Processing Request.",1);
 
-}catch (){
-
+}catch (Exception $e){
+    die($e->getMessage());
 }
