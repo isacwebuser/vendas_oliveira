@@ -1,0 +1,15 @@
+{
+    "name": "supsys/voliveiras",
+    "description": "Curso de PHP",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Isac Souza",
+            "email": "isac@teste.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}
