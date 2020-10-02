@@ -27,9 +27,9 @@ $var = array(
     "variable"	=> "Hello World!",
     "version"	=> "3.0 Alpha",
     "menu"		=> array(
-        array("name" => "Home", "link" => "index.php", "selected" => true ),
-        array("name" => "FAQ", "link" => "index.php/FAQ/", "selected" => null ),
-        array("name" => "Documentation", "link" => "index.php/doc/", "selected" => null )
+        array("name" => "Home", "link" => "index2.php", "selected" => true ),
+        array("name" => "FAQ", "link" => "index2.php/FAQ/", "selected" => null ),
+        array("name" => "Documentation", "link" => "index2.php/doc/", "selected" => null )
     ),
     "week"		=> array( "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ),
     "user"		=> (object) array("name"=>"Rain", "citizen" => "Earth", "race" => "Human" ),

@@ -5,7 +5,7 @@ define("URL", "/var/www/html");
 include (URL . DIRECTORY_SEPARATOR . "DAO/config.php");
 
 if(empty($_POST['desLogin']) || empty($_POST['desPass'])){
-    header('Location: ../index.php');
+    header('Location: ../index2.php');
     exit;
 }
 
@@ -21,7 +21,7 @@ try {
         exit();
     } else {
         $_SESSION['nao_autenticado'] = true;
-        header("Location: ../index.php");
+        header("Location: ../index2.php");
         exit();
     }
 } catch (Exception $e){
