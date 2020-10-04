@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define("URL", "/var/www/html");
+define("URL", "/var/www/voliveiras");
 include (URL . DIRECTORY_SEPARATOR . "DAO/config.php");
 
 if(empty($_POST['desLogin']) || empty($_POST['desPass'])){
@@ -27,5 +27,3 @@ try {
 } catch (Exception $e){
     die($e->getMessage());
 }
-
-

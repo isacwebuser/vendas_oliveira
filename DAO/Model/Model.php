@@ -1,14 +1,13 @@
 <?php
 
 define('HOST', 'mysql:localhost;');
-define('DBNAME', 'portal_consultas');
-define('USER', 'root');
+define('DBNAME', 'voliveiras');
+define('USER', 'supsys');
 define('PASSWORD', 'i1s9a9c1');
 
-class Banco extends PDO{
+class Model extends PDO{
 
     private $conn;
-
 
     public function __construct(){
 
